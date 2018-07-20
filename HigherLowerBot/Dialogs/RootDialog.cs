@@ -33,9 +33,9 @@ namespace HigherLowerBot.Dialogs
                 context,
                 this.AfterChoiceSelected,
                 new[] { higher, lower },
-                String.Format("I'm thinking of a number ({0}). Is it higher or lower than 5?", myNumber),
+                "I'm thinking of a number. Is it higher or lower than 5?",
                 "I don't understand that, try guessing if my number is higher or lower then 5.",
-                attempts: 5);
+                attempts: 2);
         }
 
         private async Task AfterChoiceSelected(IDialogContext context, IAwaitable<string> result)
